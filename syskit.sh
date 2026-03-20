@@ -154,6 +154,7 @@ logger "INFO" "=== Démarrage SysKit === Commande : $* ==="
 if [ $# -eq 0 ]; then
     afficher_banniere
     echo -e "${ROUGE}[✘] Aucune commande fournie.${RESET}"
+    echo -e "    Commandes disponibles : inventory,backup,cleanup,report"
     echo -e "    Tapez ${CYAN}./syskit.sh --help${RESET} pour voir les commandes."
     echo ""
     logger "WARN" "Aucun argument fourni."
