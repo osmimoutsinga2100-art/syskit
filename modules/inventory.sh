@@ -346,7 +346,7 @@ obtenir_adresse_ip
 afficher_resume
 
 echo -e "${CYAN}  ────────────────────────────────────────────────────${RESET}"
-echo -e "  ${VERT}Inventaire complet terminé le $(date '+%d/%m/%Y à %H:%M:%S')${RESET}"
+echo -e "  ${VERT}Inventaire complet terminé avec succès le $(date '+%d/%m/%Y à %H:%M:%S')${RESET}"
 echo -e "${CYAN}  ────────────────────────────────────────────────────${RESET}"
 echo ""
 
