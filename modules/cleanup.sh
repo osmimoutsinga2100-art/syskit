@@ -296,6 +296,8 @@ supprimer_fichiers_log
 
 # Étape 5 : Afficher le résumé
 afficher_resume
+NB_TOTAL_SUPPRIMES=$(( NB_TMP_SUPPRIMES + NB_LOG_SUPPRIMES ))
+echo "$(date '+%Y-%m-%d %H:%M:%S') | $REPERTOIRE_CIBLE | $NB_TMP_SUPPRIMES .tmp | $NB_LOG_SUPPRIMES .log | Total: $NB_TOTAL_SUPPRIMES | ${taille_kb} Ko liberes" >> "$CLEANUP_TRACK"
 
 echo ""
 echo -e "${CYAN}  ────────────────────────────────────────────────────${RESET}"
