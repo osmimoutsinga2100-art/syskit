@@ -253,9 +253,8 @@ ecrire_historique_backups() {
             ecrire "  $date_backup | $nom_archive | $taille | $nb_fichiers"
             nb_backups=$(( nb_backups + 1 ))
         done < "$BACKUP_HISTORIQUE"
-
         ecrire ""
-        ecrire "  Total sauvegardes enregistrées : $nb_backups"
+        ecrire "  Nombre total de sauvegardes : $nb_backups"
     fi
     ecrire ""
 }
